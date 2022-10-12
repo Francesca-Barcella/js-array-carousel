@@ -4,6 +4,7 @@ img {
 }
 
 .container{
+    padding: 2rem;
     position: absolute;
 }
 
@@ -12,13 +13,14 @@ button {
     background-color: transparent;
 }
 
+
 button:hover{
     cursor: pointer;
 }
 
 button > i {
-    color: black;
-    background-color: grey;
+    color: white;
+    background-color: black;
     border-radius: 50%;
 }
 
