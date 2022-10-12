@@ -3,38 +3,41 @@ img {
     margin: auto;
 }
 
-.container_slide{
+.container {
     padding: 2rem;
     position: absolute;
 }
+
 
 button {
     border: none;
     background-color: transparent;
 }
 
-
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
-button > i {
+button>i {
     color: white;
     background-color: black;
     border-radius: 50%;
 }
 
-.precedente{
+.precedente {
     position: relative;
     left: 50%;
     top: 30px;
     transform: translate(-50%);
 }
 
-.successiva{
+.successiva {
     position: relative;
     left: 50%;
     bottom: 30px;
     transform: translate(-50%);
 }
 
+.unactive {
+    display: none;
+}

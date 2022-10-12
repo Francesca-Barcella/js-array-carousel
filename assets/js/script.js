@@ -24,12 +24,12 @@ const slides = [
 console.log(slides);
 
 // identificare la 1° slide (active)
-let activeSlide = slides[0];
-console.log(activeSlide);
+/* let activeSlide = slides[2];
+console.log(activeSlide); */
 
 // stampo in dom la slide active
 let containerSlide = document.querySelector('container_slide');
-containerSlide = activeSlide;
+containerSlide= activeSlide;
 console.log('questa è la slide active che verrà stampata in dom:',  containerSlide);
 
 //ciclo for
