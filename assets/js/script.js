@@ -12,8 +12,8 @@ Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, c
 ************************************************************/
 
 //MILESTONE 2:
-// 1 - nascondiamo tutti il markup
-// 2 - creare array con le foto
+// nascondiamo tutti il markup
+// creare array con le foto
 const slides = [
     'img/01.webp',
     'img/02.webp',
@@ -22,4 +22,23 @@ const slides = [
     'img/05.webp'
 ]
 console.log(slides);
+
+// identificare la 1° slide (active)
+let activeSlide = slides[0];
+console.log(activeSlide);
+
+// stampo in dom la slide active
+let containerSlide = document.querySelector('container_slide');
+containerSlide = activeSlide;
+console.log('questa è la slide active che verrà stampata in dom:',  containerSlide);
+
+//ciclo for
+for (let i = 0; i < slides.length; i++) {
+    const singleSlide = slides[i];
+    console.log(singleSlide);
+}
+
+
+
+
 
