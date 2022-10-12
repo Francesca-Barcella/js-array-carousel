@@ -12,3 +12,14 @@ Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, c
 ************************************************************/
 
 //MILESTONE 2:
+// 1 - nascondiamo tutti il markup
+// 2 - creare array con le foto
+const slides = [
+    'img/01.webp',
+    'img/02.webp',
+    'img/03.webp',
+    'img/04.webp',
+    'img/05.webp'
+]
+console.log(slides);
+
