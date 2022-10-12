@@ -36,6 +36,7 @@ console.log('questa è la slide active che verrà stampata in dom:',  containerS
 for (let i = 0; i < slides.length; i++) {
     const singleSlide = slides[i];
     console.log(singleSlide);
+
 }
 
 
