@@ -1,3 +1,38 @@
-body{
-    background-color: lightcoral;
+img {
+    max-width: 100%;
+    margin: auto;
 }
+
+.container{
+    position: absolute;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button > i {
+    color: black;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.precedente{
+    position: relative;
+    left: 50%;
+    top: 30px;
+    transform: translate(-50%);
+}
+
+.successiva{
+    position: relative;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%);
+}
+
