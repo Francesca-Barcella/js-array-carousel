@@ -24,15 +24,20 @@ const slides = [
 ]
 console.log(slides);
 
-let slideContainer = document.querySelector('.container_slide');
-console.log(slideContainer);
+//CORREZIONE - prendo gli elementi dal dom che mi serviranno per l'esercizio
+const slideContainer = document.querySelector('.slides');
+const btnPrec = document.querySelector('.precedente');
+const btnSucc = document.querySelector('.successiva');
+console.log(slideContainer, btnPrec, btnSucc);
 
-
+//CORREZIONE - decido l'indice dell'immagine attiva da cui partire (let perchè poi cambierà)
+let activeImg = 0;
 
 for (let i = 0; i < slides.length; i++) {
-    const singleSlide = slides[i];
-    console.log(singleSlide);
-    const slideMarkup = singleSlide;
+    const slideSrc = slides[i];
+    console.log(slideSrc);
+    //CORREZIONE - inserisco il path dell'immagine tramite template literal e formula abbreviata di if else
+    const slideMarkup =`<img class="img-fluid ${i === activeImg ? 'active' : ''}" src="${slideSrc}" alt= "">`;
     slideContainer.insertAdjacentHTML('beforeend', slideMarkup)
 }
 
