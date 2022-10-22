@@ -42,6 +42,24 @@ for (let i = 0; i < slides.length; i++) {
 }
 
 
+//MILESTONE 3: Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente.
+// attivo eventlistener su PRECEDENTE
+// seleziono l'immagine attiva
+// gli tolgo la classe active
+// assegno l'incremento ++ al valore di activeImg (la let di prima =0) che ad ogni click poi aumenterà di 1 l'ndice della foto da "pescare" dall'array
+// creo una variabile per prendere tutte le immagini dal ciclo for tramite getElement BYCLASSNAME
+// creo una variabile per l'immagine successiva
+// assegno il valore active a questa immagine
+
+//STRUTTURA EVENTLISTENER
+/* nomevariabile.addEventListener('click', function(){
+tutto il codice delle oeprazioni
+}); */
+
+
+// attivo eventlistener su SUCCESSIVA
+// dovrebbe essere tutto uguale ma l'incremento delle img è un DECREMENTO.
+
 
 
 
