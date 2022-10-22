@@ -14,23 +14,28 @@ Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, c
 //MILESTONE 2:
 // nascondiamo tutti il markup
 // creare array con le foto
+//CORREZIONE -  INSERIRE TUTTO IL PERCORSO DELL'IMMAGINE!
 const slides = [
-    'img/01.webp',
-    'img/02.webp',
-    'img/03.webp',
-    'img/04.webp',
-    'img/05.webp'
+    './assets/img/01.webp',
+    './assets/img/02.webp',
+    './assets/img/03.webp',
+    './assets/img/04.webp',
+    './assets/img/05.webp'
 ]
 console.log(slides);
 
 let slideContainer = document.querySelector('.container_slide');
 console.log(slideContainer);
-slideContainer.append(Image);
+
+
 
 for (let i = 0; i < slides.length; i++) {
     const singleSlide = slides[i];
     console.log(singleSlide);
+    const slideMarkup = singleSlide;
+    slideContainer.insertAdjacentHTML('beforeend', slideMarkup)
 }
+
 
 
 
